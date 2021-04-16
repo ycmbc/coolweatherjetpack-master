@@ -24,15 +24,3 @@
 另外对于这张架构图我还有必要再解释一下，图中所有的箭头都是单向的，比方说WeatherActivity指向了WeatherViewModel，表示WeatherActivity持有WeatherViewModel的引用，但是反过来WeatherViewModel不能持有WeatherActivity的引用。其他的几层也是一样的道理，一个箭头就表示持有一个引用。
 
 还有，引用不能跨层持有，就比方说UI控制层不能持有仓库层的引用，每一层的组件都只能和它的相邻层交互。
-
-大概就介绍这么多吧，剩下的就靠大家自己去阅读源码进行学习了。
-
-项目运行截图如下：
-
-<img src="https://raw.githubusercontent.com/guolindev/coolweatherjetpack/master/images/Screenshot_1.png" width="250" />&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<img src="https://raw.githubusercontent.com/guolindev/coolweatherjetpack/master/images/Screenshot_2.png" width="250" />
-
-最后，希望这个项目能够帮助大家更好地学习Jetpack，更好地学习MVVM架构。
-
-学习更多的Android技术知识，请关注我的微信公众号：
-
-<img src="https://raw.githubusercontent.com/guolindev/booksource/master/qrcode.jpg" width="250" />
